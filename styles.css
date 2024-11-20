@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    scroll-behavior: smooth;
+}
 header{
     padding-bottom: 5rem;
     background: linear-gradient(130deg, #fdefe9 62%, white 50%);
@@ -176,4 +178,140 @@ nav{
 .about_img_vidz > span > i{
     color: #ee4f0e;
     font-size: 1.2rem;
+}
+/* features styling */
+/* .features{
+    border: 2px solid;
+} */
+
+.features > h5{
+    color: red;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.features > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.feature-cards-wrapper{
+    margin-block: 2.5rem;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.feature-card{
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: .2rem .3rem 15px rgb(223, 220, 220);
+    height: 50vh;
+    width: 35%;
+    background-color: #fff;
+}
+
+.feature-card:nth-child(2){
+    background-color: #fdeee7;
+}
+.feature-card > span{
+    background-color: #e7effc;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.feature-card-content{
+    margin-block: 1rem;
+}
+.feature-card-content > h4{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.feature-card-content > p{
+    text-align: center;
+    margin-block: 1rem;
+    font-size: 14px;
+}
+
+.feature-card-content > a{
+    display: block;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}
+
+.feature-card-content > a > span{
+    color: black;
+}
+
+/* Responsiveness code */
+@media (min-width: 320px) and (max-width: 460px){
+    .inner-nav{
+        width: calc(100% - 30px);
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    .banner{
+        width: calc(100% - 30px);
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .banner-content, .banner-image{
+        width: 100%;
+    }
+
+    .shoe_details{
+        width: calc(100% - 30px);
+    }
+
+    .shoe_details_card{
+        gap: .3rem;
+        padding: 1rem;
+    }
+
+    .about_ads{
+        width: calc(100% - 30px);
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_content{
+        width: 100%;
+    }
+
+    .about_img_vidz{
+        width: 90%;
+        margin: auto;
+    }
+
+    .about_img_vidz > img{
+        margin-left: -1.5rem;
+    }
+
+    .features{
+        width: calc(100% - 30px);
+    }
+
+    .feature-cards-wrapper{
+        width: 360px;
+        margin: 2rem auto;
+        flex-direction: column;
+    }
+
+    .feature-card{
+        width: 100%;
+    }
+
+    .features > h1{
+        font-size: 1.7rem;
+    }
 }
